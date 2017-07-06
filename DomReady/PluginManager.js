@@ -56,9 +56,8 @@ class PluginManager {
 
     reload(name) {
         try {
-            const file = this.plugins[name].filePath;
             this.unload(name);
-            this.load(file);
+            this.load(name);
             console.log(`Plugin ${name} has been reloaded.`);
         } catch (err) {
             console.error('Failed to reload plugin', window._path.basename(name), err);
