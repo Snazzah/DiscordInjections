@@ -50,8 +50,8 @@ All usage takes place in the folder you installed DiscordInjections into.
 By default, DiscordInjections comes with a blank `style.css` file within the `CSS` folder. It is recommended to put in this folder, but in a different file (to prevent update conflicts).
 
 For a custom location, open Content Inspector (`ctrl` + `shift` + `I`) and type
-```
-_cssInjector.set("path/to/css");
+```js
+DI.CssInjector.set("path/to/css");
 ```
 
 ### JavaScript
