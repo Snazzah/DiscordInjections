@@ -37,16 +37,8 @@ const css = `
 
 class CommandHandler {
     constructor() {
-        let diNode = window.DI.localStorage.getItem('DI-DiscordInjections');
-        if (diNode === null) {
-            let path = window.DI.localStorage.getItem('customPrefix') || '//';
-            window.DI.localStorage.setItem('DI-DiscordInjections', JSON.stringify({ cssPath: path }));
-        } else {
-            diNode = JSON.parse(diNode);
-            if (!diNode.commandPrefix) {
-                diNode.commandPrefix = '//';
-                window.DI.localStorage.setItem('DI-DiscordInjections', JSON.stringify(diNode));
-            }
+        if (!window.DI.localStorage.getItem('customPrefix')) {
+            window.DI.localStorage.setItem('customPrefix', '//');
         }
 
         this.commands = {};
@@ -116,16 +108,13 @@ class CommandHandler {
         }
         window.DI.Helpers.sendDI(`Set the custom prefix to \`${prefix}\`.\n${slashWarning ? `Warning: Setting the prefix to \`/\` may have undesired consequences due to conflict with the actual client. If you run into issues, you may reset your prefix by opening the console (ctrl+shift+i) and typing:\n\`\`\`\nDI.CommandHelper.setPrefix('//')\n\`\`\`` : ''}`);
     }
-
     setPrefix(prefix) {
-        let diNode = JSON.parse(window.DI.localStorage.getItem('DI-DiscordInjections'));
-        diNode.commandPrefix = prefix;
-        window.DI.localStorage.setItem('DI-DiscordInjections', JSON.stringify(diNode));
+        window.DI.localStorage.setItem('customPrefix', prefix);
         console.log('The prefix has been changed to', prefix);
     }
 
     get prefix() {
-        return JSON.parse(window.DI.localStorage.getItem('DI-DiscordInjections')).commandPrefix.toLowerCase();
+        return window.DI.localStorage.getItem('customPrefix').toLowerCase();
     }
 
     hookCommand(command) {
@@ -273,7 +262,8 @@ class CommandHandler {
 
     onKeyDown(event) {
         let ac;
-        if (!this.textarea || (event.target === this.textarea && event.key === 'Enter' && this.textarea.value === '')) {
+        if (event.target === this.textarea && event.key === 'Enter' && this.textarea.value === '') {
+            event.preventDefault();
             return;
         };
         if (this.textarea.value.toLowerCase().startsWith(this.prefix))
@@ -368,7 +358,10 @@ class CommandHandler {
                 parseInt(result[3], 16)
             ] : null;
         };
-        const isDark = c => (c[0] * 0.299 + c[1] * 0.587 + c[2] * 0.114) > 150 ? false : true;
+        const isDark = c => (c[ 0 ] * 0.299 + c[ 1 ] * 0.587 + c[ 2 ] * 0.114) > 150 ? false : true;
+        let colr = null;
+        if(command.plugin && typeof command.plugin.color === 'number') colr = command.plugin.color.toString(16);
+        else if(command.plugin) colr = command.plugin.color;
         let element = this.createElement(`<div class="autocompleteRowVertical-3_UxVA autocompleteRow-31UJBI command">
             <div class="selector-nbyEfM selectable-3iSmAf" onclick="DI.CommandHandler.makeSelection('${command.name}');"
             onmouseover="DI.CommandHandler.onHover(this);">
@@ -379,7 +372,7 @@ style="flex: 1 1 auto;">
 <div class="marginLeft4-3RAvyQ primary400-1OkqpL">${command.usage}</div>
 
 <div class="ellipsis-1MzbWB primary400-1OkqpL di-autocomplete-commandinfo" style="flex: 1 1 auto";>${command.plugin ?
-                `<span class='command-plugin-tag${isDark(h2rgb(command.plugin.color)) ? " dark" : ""}' style="color: #${command.plugin.color};border-color: #${command.plugin.color};">
+                `<span class='command-plugin-tag${isDark(h2rgb(colr)) ? " dark" : ""}' style="color: #${colr};border-color: #${command.plugin.color};">
                 ${command.plugin.name}</span> - `
                 : ''
             }${command.info}</div>
