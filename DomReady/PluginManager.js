@@ -78,8 +78,8 @@ class PluginManager {
             return loaded;
         }
         try {
-            this.unload(name.toLowerCase());
-            this.load(name.toLowerCase());
+            this.unload(name);
+            this.load(name);
             console.log(`Plugin ${name} has been reloaded.`);
             return true;
         } catch (err) {
