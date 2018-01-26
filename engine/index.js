@@ -55,6 +55,10 @@ process.once("loaded", async () => {
     return require(path.resolve(__dirname, "..", file), ...args)
   }
 
+  Object.assign(window, {
+    get DI() { return DI }
+  })
+
   const ready = new Promise(rs => getCurrentWebContents().on("dom-ready", rs))
 
   // add core modules
