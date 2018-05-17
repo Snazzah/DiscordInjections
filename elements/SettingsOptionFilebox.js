@@ -26,7 +26,7 @@ class SettingsOptionFilebox extends Base {
           'div',
           {
             className:
-              'flex-lFgbSz flex-3B1Tl4 horizontal-2BEEBe horizontal-2VE-Fw flex-3B1Tl4 directionRow-yNbSvJ justifyStart-2yIZo0 alignStretch-1hwxMa noWrap-v6g9vO',
+              'flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignStretch-DpGPf3 noWrap-3jynv6',
             style: {
               flex: '1 1 auto'
             }
@@ -52,7 +52,7 @@ class SettingsOptionFilebox extends Base {
         'div',
         {
           className:
-            'flex-lFgbSz flex-3B1Tl4 vertical-3X17r5 flex-3B1Tl4 directionColumn-2h-LPR justifyStart-2yIZo0 alignStretch-1hwxMa noWrap-v6g9vO switchItem-1uofoz',
+            'flex-1xMQg5 flex-1O1GKY vertical-V37hAW flex-1O1GKY directionColumn-35P_nr justifyStart-2NDFzi alignStretch-DpGPf3 noWrap-3jynv6 switchItem-2hKKKK',
           style: {
             flex: '1 1 auto'
           }
@@ -63,7 +63,7 @@ class SettingsOptionFilebox extends Base {
         'div',
         {
           className:
-            'flex-lFgbSz flex-3B1Tl4 horizontal-2BEEBe horizontal-2VE-Fw flex-3B1Tl4 directionRow-yNbSvJ justifyStart-2yIZo0 alignStretch-1hwxMa noWrap-v6g9vO margin-bottom-20'
+            'flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignStretch-DpGPf3 noWrap-3jynv6 margin-bottom-20'
         },
         e(
           'div',
@@ -77,7 +77,7 @@ class SettingsOptionFilebox extends Base {
             'div',
             {
               className:
-                'flex-lFgbSz flex-3B1Tl4 horizontal-2BEEBe horizontal-2VE-Fw flex-3B1Tl4 directionRow-yNbSvJ justifyStart-2yIZo0 alignStretch-1hwxMa noWrap-v6g9vO layout',
+                'flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignStretch-DpGPf3 noWrap-3jynv6 layout',
               style: {
                 flex: '1 1 auto',
                 background: 'none'
@@ -85,12 +85,12 @@ class SettingsOptionFilebox extends Base {
             },
             e('input', {
               className:
-                'inputDefault-Y_U37D input-2YozMi size16-3IvaX_ flexChild-1KGW5q',
+                'inputDefault-_djjkz input-cIJ7To size16-14cGz5 flexChild-faoVW3',
               type: this.props.password ? 'password' : 'text',
               placeholder:
                 this.props.defaultValue || this.props.placeholder || undefined,
               name: this.props.name || undefined,
-              maxlength: this.props.maxlength || undefined,
+              maxLength: this.props.maxlength || undefined,
               value: this.state.value,
               onChange: this.change.bind(this),
               style: {
@@ -103,7 +103,7 @@ class SettingsOptionFilebox extends Base {
               'div',
               {
                 className:
-                  'flex-lFgbSz flex-3B1Tl4 horizontal-2BEEBe horizontal-2VE-Fw flex-3B1Tl4 directionRow-yNbSvJ justifyStart-2yIZo0 alignStretch-1hwxMa noWrap-v6g9vO',
+                  'flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignStretch-DpGPf3 noWrap-3jynv6',
                 style: {
                   flex: '0 1 auto',
                   margin: '0px'
@@ -114,14 +114,14 @@ class SettingsOptionFilebox extends Base {
                 {
                   type: 'button',
                   className:
-                    'buttonGreyGhostDefault-2h5dqi buttonGhostDefault-2NFSwJ buttonDefault-2OLW-v button-2t3of8 buttonGhost-2Y7zWJ buttonGreyGhost-SfY7zU minGrow-1W9N45 min-K7DTfI ui-input-button-ui-button key-recorder-button',
+                    'buttonGreyGhostDefault-2h5dqi buttonGhostDefault-2NFSwJ buttonDefault-2OLW-v button-38aScr buttonGhost-2Y7zWJ buttonGreyGhost-SfY7zU minGrow-1W9N45 min-K7DTfI ui-input-button-ui-button key-recorder-button',
                   onClick: this.fileSelector.bind(this)
                 },
                 e(
                   'div',
                   {
                     className:
-                      'contentsDefault-nt2Ym5 contents-4L4hQM contentsGhost-2Yp1r8'
+                      'contentsDefault-nt2Ym5 contents-18-Yxp contentsGhost-2Yp1r8'
                   },
                   e(
                     'span',

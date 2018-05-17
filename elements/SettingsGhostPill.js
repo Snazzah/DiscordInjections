@@ -7,7 +7,7 @@ class SettingsGhostPill extends React.Component {
       'h3',
       {
         className:
-          'ghostPill-1yup5q cursorDefault-3ZQG0B flexChild-1KGW5q',
+          'ghostPill-2-KUPM cursorDefault-331ZcI flexChild-faoVW3',
         style: {
           flex: '0 1 auto'
         }

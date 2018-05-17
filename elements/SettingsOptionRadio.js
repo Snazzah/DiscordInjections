@@ -16,7 +16,7 @@ class SettingsOptionRadio extends Base {
       return e(
         'div',
         {
-          className: 'item-2zi_5J marginBottom8-1mABJ4 horizontal-2VE-Fw flex-3B1Tl4 directionRow-yNbSvJ cardPrimaryEditable-2IQ7-V card-3DrRmC',
+          className: 'item-26Dhrx marginBottom8-AtZOdT horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG cardPrimaryEditable-3KtE4g card-3Qj_Yx',
           style: {
             padding: '10px',
             borderColor: selected ? 'rgb(114, 137, 218)' : '',
@@ -26,11 +26,11 @@ class SettingsOptionRadio extends Base {
         },
         e(
           'label',
-          { className: 'checkboxWrapper-2Yvr_Y' },
+          { className: 'checkboxWrapper-SkhIWG' },
           e(
             'input',
             {
-              className: 'inputDefault-2tiBIA input-oWyROL',
+              className: 'inputDefault-3JxKJ2 input-3ITkQf',
               type: 'checkbox',
               value: 'on'
             }
@@ -38,7 +38,7 @@ class SettingsOptionRadio extends Base {
           e(
             'div',
             {
-              className: `checkbox-1QwaS4 flexCenter-28Hs0n flex-3B1Tl4 justifyCenter-29N31w alignCenter-3VxkQP box-XhjOl4 ${selected ? 'checked-2TahvT' : ''}`,
+              className: `checkbox-1ix_J3 flexCenter-3_1bcw flex-1O1GKY justifyCenter-3D2jYp alignCenter-1dQNNs box-mmYMsp ${selected ? 'checked-3_4uQ9' : ''}`,
               style: selected ? { borderColor: 'rgb(114, 137, 218)' } : {}
             },
             e(
@@ -69,11 +69,11 @@ class SettingsOptionRadio extends Base {
         ),
         e(
           'div',
-          { className: 'info-1Z508c' },
+          { className: 'info-3LOr12' },
           e(
             'div',
             {
-              className: `${selected ? 'titleChecked-3Ngoss' : ''} title-1M-Ras`,
+              className: `${selected ? 'titleChecked-2wg0pd' : ''} title-3BE6m5`,
               style: selected ? { color: 'rgb(255, 255, 255)'} : {}
             },
             i
@@ -86,7 +86,7 @@ class SettingsOptionRadio extends Base {
   render () {
     return e(
       'div',
-      { className: 'radioGroup-2P3MJo' },
+      { className: 'radioGroup-1GBvlr' },
       ...this.generateItems()
     )
   }

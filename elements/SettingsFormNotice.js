@@ -10,19 +10,19 @@ class SettingsFormNotice extends React.PureComponent {
     return e(
       'div',
       {
-        className: 'formNotice-2tZsrh margin-bottom-40 cardPrimary-ZVL9Jr card-3DrRmC',
+        className: 'formNotice-2_hHWR margin-bottom-40 cardPrimary-1Hv-to card-3Qj_Yx',
         style: { flex: '1 1 auto' }
       },
       e(
         'div',
         {
-          className: 'flex-lFgbSz flex-3B1Tl4 horizontal-2BEEBe horizontal-2VE-Fw flex-3B1Tl4 directionRow-yNbSvJ justifyStart-2yIZo0 alignStart-pnSyE6 noWrap-v6g9vO',
+          className: 'flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignStart-H-X2h- noWrap-3jynv6',
           style: { flex: '1 1 auto' }
         },
         e(
           'img',
           {
-            className: 'flex-lFgbSz flex-3B1Tl4 horizontal-2BEEBe horizontal-2VE-Fw flex-3B1Tl4 directionRow-yNbSvJ justifyStart-2yIZo0 alignStart-pnSyE6 noWrap-v6g9vO',
+            className: 'icon-4lJsMQ noUserDrag-5Mb43F flexChild-faoVW3',
             style: { flex: '0 0 auto' },
             height: this.props.imageHeight || 40,
             src: this.props.image || '/assets/e8b66317ab0dc9ba3bf8d41a4f3ec914.png'
@@ -31,17 +31,17 @@ class SettingsFormNotice extends React.PureComponent {
         e(
           'div',
           {
-            className: 'flexChild-1KGW5q',
+            className: 'flexChild-faoVW3',
             style: { flex: '1 1 auto' }
           },
           e(
             'h5',
-            { className: 'h5-3KssQU title-1pmpPr size12-1IGJl9 height16-1qXrGy weightSemiBold-T8sxWH formNoticeTitle-1m5mND marginBottom4-_yArcI faded-1KRDbu' },
+            { className: 'h5-18_1nd title-3sZWYQ size12-3R0845 height16-2Lv3qA weightSemiBold-NJexzi formNoticeTitle-2KGjDe marginBottom4-2qk4Hy faded-3bns_w' },
             this.props.title
           ),
           e(
             'div',
-            { className: 'default-3bB32Y formText-1L-zZB formNoticeBody-1C0wup modeDefault-389VjU primary-2giqSn' },
+            { className: 'default-3nhoK- formText-3fs7AJ formNoticeBody-M4JFHP modeDefault-3a2Ph1 primary-jw0I4K' },
             this.props.description
           )
         )

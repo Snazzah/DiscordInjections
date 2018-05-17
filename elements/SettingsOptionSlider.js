@@ -11,7 +11,7 @@ class SettingsOptionSlider extends Base {
   }
 
   documentDrag (e) {
-    const tRect = this._reactInternalFiber.child.stateNode.querySelector('.track-1h2wOF').getBoundingClientRect()
+    const tRect = this._reactInternalFiber.child.stateNode.querySelector('.track-11EASc').getBoundingClientRect()
     const nextValue = Math.min(Math.max(((e.clientX-tRect.left)/tRect.width)*100, 0), 100);
     this.setProp(nextValue);
     this.setState({
@@ -23,41 +23,41 @@ class SettingsOptionSlider extends Base {
   render () {
     return e(
       'div',
-      { className: 'slider-2e2iXJ' },
+      { className: 'slider-1PF9SW' },
       e(
         'input',
         {
           type: 'number',
-          className: 'input-27JrJm',
+          className: 'input-2_ChIk',
           value: Math.round(this.getProp()),
           readOnly: true
         }
       ),
-      e('div', { className: 'track-1h2wOF' }),
+      e('div', { className: 'track-11EASc' }),
       e(
         'div',
-        { className: 'bar-2cFRGz' },
+        { className: 'bar-2Qqk5Z' },
         e(
           'div',
           {
-            className: 'barFill-18ABna',
+            className: 'barFill-23-gu-',
             style: { width: `${this.getProp()}%` }
           }
         )
       ),
       e(
         'div',
-        { className: 'track-1h2wOF' },
+        { className: 'track-11EASc' },
         e(
           'div',
           {
-            className: 'grabber-1TZCZi',
+            className: 'grabber-3mFHz2',
             style: { left: `${this.getProp()}%` },
             onMouseDown: this.grabberDown.bind(this)
           },
           this.props.bubble ? e(
             'div',
-            { className: 'bubble-17BwqU elevationHigh-3lNfp9' },
+            { className: 'bubble-3we2di elevationHigh-3A9Xbf' },
             this.props.bubbleText ? this.props.bubbleText(this.getProp()) : `${Math.round(this.getProp())}%`
           ) : undefined
         )

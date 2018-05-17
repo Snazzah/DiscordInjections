@@ -8,7 +8,7 @@ class SettingsSubTitle extends React.Component {
       'h5',
       {
         className:
-          'h5-3KssQU title-1pmpPr size12-1IGJl9 height16-1qXrGy weightSemiBold-T8sxWH defaultMarginh5-2UwwFY marginBottom8-1mABJ4'
+          'h5-18_1nd title-3sZWYQ size12-3R0845 height16-2Lv3qA weightSemiBold-NJexzi defaultMarginh5-2mL-bP marginBottom8-AtZOdT'
       },
       this.props.text
     )

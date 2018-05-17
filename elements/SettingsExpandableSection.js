@@ -5,7 +5,7 @@ const e = React.createElement
 const SettingsDivider = require('./SettingsDivider')
 
 const titleDivClass =
-  'flex-lFgbSz flex-3B1Tl4 horizontal-2BEEBe horizontal-2VE-Fw flex-3B1Tl4 directionRow-yNbSvJ justifyStart-2yIZo0 alignCenter-3VxkQP noWrap-v6g9vO header-qR6-lU foldableHeaderExpanded-3g_WYd'
+  'flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignCenter-1dQNNs noWrap-3jynv6 header-1zEOkT foldableHeaderExpanded-1-Vrje'
 
 function generateInnerSection (props) {
   let output = []
@@ -28,16 +28,16 @@ class SettingsExpandableSection extends React.Component {
   }
   get h2Class () {
     let output =
-      'h2-2ar_1B title-1pmpPr size16-3IvaX_ height20-165WbF weightSemiBold-T8sxWH defaultColor-v22dK1 title-16MQon flexChild-1KGW5q'
-    if (this.state.hover) output += ' titleHovered-1YMLyx'
-    else output += ' titleNormal-3eHHbm'
+      'h2-2gWE-o title-3sZWYQ size16-14cGz5 height20-mO2eIN weightSemiBold-NJexzi defaultColor-1_ajX0 title-3patTt flexChild-faoVW3'
+    if (this.state.hover) output += ' titleHovered-3DscuN'
+    else output += ' titleNormal-1HdYjr'
     return output
   }
 
   get iconClass () {
-    let output = 'expandIconBG-Li1qfl flexChild-1KGW5q'
-    if (this.state.hover) output += ' expandIconBGHovered-2C1DhE'
-    else output += ' expandIconBGNormal-2Ve5cT'
+    let output = 'expandIconBG-3WFmuk flexChild-faoVW3'
+    if (this.state.hover) output += ' expandIconBGHovered-2qIR0q'
+    else output += ' expandIconBGNormal-2hJ35T'
     return output
   }
 
@@ -63,7 +63,7 @@ class SettingsExpandableSection extends React.Component {
       'div',
       {
         className:
-          'ui-form-item sound-list expandableSection-1QgO0O user-settings-notifications'
+          'ui-form-item sound-list expandableSection-1KmCga user-settings-notifications'
       },
       e(
         'div',
@@ -100,21 +100,21 @@ class SettingsExpandableSection extends React.Component {
             e(
               'svg',
               {
-                className: `expandIcon-1EANE_ transition-2ebS5- ${this.state
+                className: `expandIcon-2PwFEX transition-2IHyE9 ${this.state
                   .expanded
                   ? ''
-                  : 'closed-2Hef-I'}`,
+                  : 'closed-1D6IW8'}`,
                 width: '24',
                 height: '24',
                 viewBox: '0 0 24 24'
               },
               e('path', {
-                className: 'expandIconForeground-3XL8Rh',
+                className: 'expandIconForeground-1h4s61',
                 fill: 'none',
                 stroke: 'currentColor',
-                'stroke-width': '2',
-                'stroke-linecap': 'round',
-                'stroke-linejoin': 'round',
+                strokeWidth: '2',
+                strokeLinecap: 'round',
+                strokeLinejoin: 'round',
                 d: 'M7 10L12 15 17 10'
               })
             )

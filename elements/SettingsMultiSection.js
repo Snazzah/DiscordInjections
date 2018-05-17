@@ -11,8 +11,8 @@ class SettingsMultiSection extends React.PureComponent {
       return e(
         'div',
         {
-          className: 'flexChild-1KGW5q',
-          style: { flex: '1 1 50%' }
+          className: 'flexChild-faoVW3',
+          style: { flex: '1 1 auto' }
         },
         s
       )
@@ -23,7 +23,7 @@ class SettingsMultiSection extends React.PureComponent {
     return e(
       'div',
       {
-        className: 'flex-lFgbSz flex-3B1Tl4 horizontal-2BEEBe horizontal-2VE-Fw flex-3B1Tl4 directionRow-yNbSvJ justifyStart-2yIZo0 alignStretch-1hwxMa noWrap-v6g9vO margin-bottom-20',
+        className: 'flex-1xMQg5 flex-1O1GKY horizontal-1ae9ci horizontal-2EEEnY flex-1O1GKY directionRow-3v3tfG justifyStart-2NDFzi alignStretch-DpGPf3 noWrap-3jynv6 margin-bottom-20',
           style: { flex: '1 1 auto' }
       },
       ...this.generateSections()
